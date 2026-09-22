@@ -6,6 +6,8 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 export const metadata = {
   title: "Sri Satyadeva Nursery | Kadiyam",
   description: "Sri Satyadeva Nursery — plants, palms, ornamental greenery and nursery services.",
+  icons: {
+    icon: "branding/logo.jpg",}
 };
 
 export default function RootLayout({ children }) {

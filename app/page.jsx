@@ -11,7 +11,7 @@ export default function Home() {
 
         <section className="px-6 py-16 lg:px-8">
         <SectionTitle
-          eyebrow="Sri Suryadeva Nursery"
+          eyebrow="Sri Satyadeva Nursery"
           title="Colorful nursery moments"/>
         <div className="mt-10">
           <HomeCarousel />
