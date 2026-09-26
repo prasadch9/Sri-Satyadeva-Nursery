@@ -52,16 +52,16 @@ body {
 
 .hero-gradient {
   background:
-    radial-gradient(circle at 12% 20%, rgba(255, 212, 59, .75), transparent 26%),
-    radial-gradient(circle at 86% 18%, rgba(255, 138, 37, .5), transparent 25%),
-    linear-gradient(135deg, #e9ff72 0%, #65d88e 45%, #0b8f68 100%);
+    radial-gradient(circle at 12% 20%, rgba(212, 175, 55, .22), transparent 26%),
+    radial-gradient(circle at 86% 18%, rgba(180, 160, 130, .18), transparent 25%),
+    linear-gradient(135deg, #e8e1d5 0%, #f3eee5 48%, #d8cdbb 100%);
 }
 
 .page-gradient {
   background:
-    radial-gradient(circle at 5% 15%, rgba(184,230,29,.45), transparent 22%),
-    radial-gradient(circle at 95% 80%, rgba(255,138,37,.25), transparent 20%),
-    #fffdf2;
+    radial-gradient(circle at 5% 15%, rgba(212, 175, 55, .10), transparent 22%),
+    radial-gradient(circle at 95% 80%, rgba(180, 160, 130, .12), transparent 20%),
+    #f7f4ee;
 }
 
 .pattern {

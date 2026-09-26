@@ -1,29 +1,60 @@
+"use client";
+
+import { useState } from "react";
 import SectionTitle from "@/components/SectionTitle";
 import PlantCard from "@/components/PlantCard";
 
-const plants = Array.from({ length: 30 }, (_, i) => ({
-  src: `/gallery/plant-${String(i + 1).padStart(2, "0")}.svg`,
-  name: [
-    "Areca Palm", "Royal Palm", "Golden Bamboo", "Croton", "Jade Plant",
-    "Ficus", "Bougainvillea", "Peace Lily", "Dracaena", "Hibiscus",
-    "Ixora", "Bird of Paradise", "Money Plant", "Rose", "Philodendron",
-    "Snake Plant", "Coconut Palm", "Lucky Bamboo", "Adenium", "Alocasia",
-    "Bonsai", "Fiddle Leaf Fig", "Spider Plant", "Aglaonema", "Tecoma",
-    "Gardenia", "Lemon Plant", "Guava Plant", "Mango Plant", "Ornamental Palm"
-  ][i]
-}));
+import { plantCategories, plantsByCategory } from "./plantData";
+
+const categories = plantCategories;
 
 export default function Gallery() {
+  const [selectedCategory, setSelectedCategory] = useState("Indoor");
+
+  const filteredPlants = (plantsByCategory[selectedCategory] || []).map((plant) => ({
+    ...plant,
+    category: selectedCategory,
+  }));
+
   return (
     <div className="page-gradient min-h-screen px-6 py-16 lg:px-8">
       <SectionTitle
-        eyebrow="30 Plant Images"
+        eyebrow="Sri Suryadeva Nursery"
         title="Our colorful nursery gallery"
-        text="All 30 images are local placeholder SVGs. You can replace them later inside public/gallery without changing the page layout."
+        text="Explore our collection of beautiful nursery plants."
       />
 
-      <div className="mx-auto mt-12 grid max-w-7xl gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {plants.map((plant, i) => <PlantCard key={plant.src} {...plant} index={i} />)}
+      {/* Categories */}
+      <div className="mx-auto mt-10 flex max-w-7xl gap-3 overflow-x-auto pb-4">
+        {categories.map((category) => {
+          const active = selectedCategory === category;
+
+          return (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`whitespace-nowrap rounded-full px-5 py-3 text-sm font-bold transition ${
+                active
+                  ? "bg-gray-900 text-white shadow-lg"
+                  : "bg-white text-gray-700 shadow hover:bg-gray-100"
+              }`}
+            >
+              {category}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Plants */}
+      <div className="mx-auto mt-8 grid max-w-7xl gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {filteredPlants.map((plant, i) => (
+          <PlantCard
+            key={plant.image}
+            src={plant.image}
+            category={plant.category}
+            index={i}
+          />
+        ))}
       </div>
     </div>
   );

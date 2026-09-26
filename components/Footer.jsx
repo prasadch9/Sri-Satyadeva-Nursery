@@ -19,7 +19,7 @@ export default function Footer() {
           <p className="font-black text-yellow-300">Quick Links</p>
           <div className="mt-4 grid grid-cols-2 gap-3 text-emerald-100">
             <Link href="/about" className="hover:text-white">About</Link>
-            <Link href="/gallery" className="hover:text-white">Gallery</Link>
+            <Link href="/plants" className="hover:text-white">Plants</Link>
             <Link href="/services" className="hover:text-white">Services</Link>
             <Link href="/contact" className="hover:text-white">Contact Us</Link>
           </div>

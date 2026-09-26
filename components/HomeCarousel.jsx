@@ -25,7 +25,7 @@ export default function HomeCarousel() {
   return (
     <div className="relative mx-auto max-w-6xl">
       <div className="overflow-hidden rounded-[2.5rem] border-8 border-white bg-emerald-900 shadow-2xl">
-        <div className="relative aspect-[16/8] min-h-[340px]">
+        <div className="relative aspect-[4/3] min-h-[340px] sm:aspect-[16/8]">
           {slides.map((slide, i) => (
             <div
               key={slide.src}
