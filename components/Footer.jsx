@@ -26,9 +26,9 @@ export default function Footer() {
         </div>
 
         <div>
-           <p className="text-emerald-100">Phone: 093460 81444</p>
+           <p className=" text-emerald-100"><span className="font-black text-yellow-300">Phone:</span> 093460 81444</p>
           <p className="mt-2 text-emerald-100">
-            Address: <span className="font-black text-yellow-300">Pulla Satyanarayana</span> (Chantiyya Garu), Veeravaram Rd,
+            <span className="font-black text-yellow-300">Address: </span> Pulla Satyanarayana (Chantiyya Garu), Veeravaram Rd,
             Kadiyapulanka, Andhra Pradesh 533126
           </p>
           <div className="mt-5 flex gap-3">

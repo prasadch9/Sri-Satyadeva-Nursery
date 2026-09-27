@@ -16,13 +16,8 @@ export default function PlantCard({ src, name, category }) {
             src={src}
             alt="Sri Satyadeva Nursery"
             fill
-            className="object-cover transition duration-500 group-hover:scale-110"
+            className="object-contain transition duration-500 group-hover:scale-110"
           />
-
-          {/* Nursery Name */}
-          <div className="absolute left-3 top-3 rounded-full bg-white/95 px-4 py-2 text-xs font-black text-gray-900 shadow-lg">
-            Sri Satyadeva Nursery
-          </div>
         </div>
 
         {/* Card Content */}
@@ -37,7 +32,7 @@ export default function PlantCard({ src, name, category }) {
 
           <button
             onClick={() => setShowDetails(true)}
-            className="mt-4 rounded-full bg-gray-900 px-5 py-2.5 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-orange-500"
+            className="cursor-pointer mt-4 rounded-full bg-gray-900 px-5 py-2.5 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-orange-500"
           >
             Get details
           </button>

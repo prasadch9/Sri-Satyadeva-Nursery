@@ -19,13 +19,13 @@ export default function Gallery() {
   return (
     <div className="page-gradient min-h-screen px-6 py-16 lg:px-8">
       <SectionTitle
-        eyebrow="Sri Suryadeva Nursery"
+        eyebrow="Sri Satyadeva Nursery"
         title="Our colorful nursery gallery"
         text="Explore our collection of beautiful nursery plants."
       />
 
       {/* Categories */}
-      <div className="mx-auto mt-10 flex max-w-7xl gap-3 overflow-x-auto pb-4">
+      <div className="mx-auto mt-10 flex max-w-7xl justify-center gap-3 overflow-x-auto pb-4">
         {categories.map((category) => {
           const active = selectedCategory === category;
 
@@ -33,7 +33,7 @@ export default function Gallery() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`whitespace-nowrap rounded-full px-5 py-3 text-sm font-bold transition ${
+              className={`cursor-pointer whitespace-nowrap rounded-full px-5 py-3 text-sm font-bold transition ${
                 active
                   ? "bg-gray-900 text-white shadow-lg"
                   : "bg-white text-gray-700 shadow hover:bg-gray-100"
