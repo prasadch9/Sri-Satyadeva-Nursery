@@ -5,10 +5,10 @@ import { useCallback, useEffect, useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const slides = [
-  { src: "/home/unnamed.webp", title: "Fresh Green Beginnings", text: "Colorful plants for happier spaces." },
-  { src: "/home/unnamed (1).webp", title: "Bring Nature Home", text: "Discover plants for every corner." },
-  { src: "/home/Buddha.webp", title: "Tropical Vibes", text: "Add a playful burst of greenery." },
-  { src: "/home/unnamed (3).webp", title: "Grow Something Beautiful", text: "Choose your next garden favorite." }
+  { src: "/home/unnamed.webp", title: "Fresh Green Beginnings",},
+  { src: "/home/unnamed (1).webp", title: "Bring Nature Home", },
+  { src: "/home/Buddha.webp", title: "Tropical Vibes",},
+  { src: "/home/unnamed (3).webp", title: "Grow Something Beautiful",}
 ];
 
 export default function HomeCarousel() {
@@ -35,8 +35,6 @@ export default function HomeCarousel() {
             >
               <Image src={slide.src} alt={slide.title} fill className="object-cover" priority={i === 0} />
               <div className="absolute bottom-8 left-7 max-w-lg text-white sm:bottom-12 sm:left-12">
-                <p className="font-black uppercase tracking-[.25em] text-lime-300">Sri Satyadeva Nursery</p>
-                <h2 className="mt-2 text-3xl font-black sm:text-5xl">{slide.title}</h2>
                 <p className="mt-3 text-lg text-white/90">{slide.text}</p>
               </div>
             </div>
