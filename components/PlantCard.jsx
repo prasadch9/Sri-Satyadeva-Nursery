@@ -23,11 +23,11 @@ export default function PlantCard({ src, name, category }) {
         {/* Card Content */}
         <div className="p-5">
           <h3 className="text-lg font-black text-gray-900">
-            Sri Satyadeva Nursery
+            {name}
           </h3>
 
           <p className="mt-1 text-sm text-gray-500">
-            Healthy nursery plant
+            Sri Satyadeva Nursery
           </p>
 
           <button
@@ -111,7 +111,7 @@ export default function PlantCard({ src, name, category }) {
                     Availability
                   </p>
                   <p className="mt-1 font-bold text-gray-800">
-                    Contact Nursery
+                    093460 81444
                   </p>
                 </div>
 

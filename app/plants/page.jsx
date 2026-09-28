@@ -9,7 +9,7 @@ import { plantCategories, plantsByCategory } from "./plantData";
 const categories = plantCategories;
 
 export default function Gallery() {
-  const [selectedCategory, setSelectedCategory] = useState("Indoor");
+  const [selectedCategory, setSelectedCategory] = useState("Temple");
 
   const filteredPlants = (plantsByCategory[selectedCategory] || []).map((plant) => ({
     ...plant,
@@ -49,11 +49,12 @@ export default function Gallery() {
       <div className="mx-auto mt-8 grid max-w-7xl gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {filteredPlants.map((plant, i) => (
           <PlantCard
-            key={plant.image}
-            src={plant.image}
-            category={plant.category}
-            index={i}
-          />
+  key={plant.image}
+  src={plant.image}
+  name={plant.name}
+  category={plant.category}
+  index={i}
+/>
         ))}
       </div>
     </div>
