@@ -43,7 +43,7 @@ export const plantsByCategory = {
     {name: "Aarati", image: "/fruits/fruit  plnt 3 (aarati) copy.jpg.jpeg" },
     {name: "Pampara Panasa", image: "/fruits/fruit  plnt 4 PAMPARA PANASA) copy.jpg.jpeg" },
     {name: "Jama Safeda", image: "/fruits/fruit  plnt 5(JAMA SAFEDA) copy.jpg.jpeg" },
-    {name: "Dragon Fruit", image: "/fruits/dragon fruit.jpg" },
+    {name: "Dragon Fruit", image: "/fruits/dragon fruit.webp" },
     {name: "Suvarana Rekha Mamidi", image: "/fruits/fruit  plnt 11  suvarana rekha   MAMIDI copy.jpg.jpeg" },
     {name: "Cherry Hybrid", image: "/fruits/fruit  plnt 32 cherry hybrid copy.jpg.jpeg" },
     {name: "Blimbi Usiri", image: "/fruits/fruit  plnt 33 blimbi usiri copy.jpg.jpeg" },
