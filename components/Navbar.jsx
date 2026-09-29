@@ -28,7 +28,7 @@ export default function Navbar() {
         >
           <div className="relative h-12 w-44 overflow-hidden rounded-xl bg-white sm:h-14 sm:w-56">
             <Image
-              src="/branding/logo.jpg"
+              src="/branding/busins logo.jpg"
               alt="Sri Suryadeva Nursery logo"
               fill
               className="object-contain"

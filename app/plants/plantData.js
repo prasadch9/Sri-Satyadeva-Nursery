@@ -11,52 +11,7 @@ export const plantCategories = [
 ];
 
 export const plantsByCategory = {
- /* Indoor: [
-    { image: "/indoor plants/1-576x1024.webp" },
-    { image: "/indoor plants/6b772c07-7774-4aef-a676-65d712cae748.jpeg" },
-    { image: "/indoor plants/2024_Novemeber_Ecom_FloridaPlants-099.webp" },
-    { image: "/indoor plants/1719282944-Dracaena-Golden-Heart-Main-scaled.avif" },
-    { image: "/indoor plants/ChatGPT_Image_Dec_17_2025_12_42_28_PM.webp" },
-    { image: "/indoor plants/coin_plant_1724763542_f0d8fd69_progressive.jpg" },
-    { image: "/indoor plants/difficult-house-plant-croton-c70940d3ff2e47baa26983ffb9a4d58c.jpg" },
-    { image: "/indoor plants/GettyImages-490131664-783cf3ba7ed24a9c9b5c8a7f29be1932.jpg" },
-    { image: "/indoor plants/gettyimages-968405046-2000-eb0b2477f2874a58b2ec3107a29b24bf.jpg" },
-    { image: "/indoor plants/il_fullxfull.7771478067_humw.webp" },
-    { image: "/indoor plants/images.jpg" },
-    { image: "/indoor plants/living-lace-victoria-bird-s-nest-fern-asplenium-antiquum-proven-winners_18891.jpg" },
-    { image: "/indoor plants/plant_indian-basil.webp" },
-    { image: "/indoor plants/revitalize_your_bedroom_space_54ezz.jpg" },
-    { image: "/indoor plants/sam-galli-kVuW2Y40q1c-unsplash.webp" },
-    { image: "/indoor plants/spider-plant.jpg.webp" },
-    { image: "/indoor plants/shutterstock_1023339421-2048x1443.jpg" },
-    { image: "/indoor plants/shutterstock_1464193490.jpg" },
-    { image: "/indoor plants/the-sill-alocasia-tiny-dancer-medium-grant-cream-variant-67645543c9f48.avif" },
-    { image: "/indoor plants/ugaoo_transform-this-image-img1_dtfHlihXSL.webp" },
-    
-  ], */
 
- /* Outdoor: [
-    { image: "/outdoor plants/0A20EC67-334A-4345-AB4A-D9964B5D20E3.webp" },
-    { image: "/outdoor plants/4_clivia_13178_3_600.jpg" },
-    { image: "/outdoor plants/1159603997_d596ea7b70.jpg" },
-    { image: "/outdoor plants/dracaena-shutterstock_1403390915.jpg" },
-    { image: "/outdoor plants/ficus-black.jpg" },
-    { image: "/outdoor plants/Furcraea_Foetida_Mediopicta_-1.webp" },
-    { image: "/outdoor plants/images (1).jpg" },
-    { image: "/outdoor plants/images (2).jpg" },
-    { image: "/outdoor plants/images (3).jpg" },
-    { image: "/outdoor plants/images (4).jpg" },
-    { image: "/outdoor plants/images.jpg" },
-    { image: "/outdoor plants/IMG_5332_07cd16bd-b8e5-4430-a2cb-82f5da7118ee.webp" },
-    { image: "/outdoor plants/Mammy-Red-is-known-for-its-colorful-foliage.jpg" },
-    { image: "/outdoor plants/montana-aureomarginata-hosta-7564b73f-fe1c98587d424ae3aac31e5c882a2731.jpg" },
-    { image: "/outdoor plants/nurserylive-air-purifier-money-plant_512x512.webp" },
-    { image: "/outdoor plants/oxalis_2b58de46-06f6-4219-93ca-3e80a9a294aa.webp" },
-    { image: "/outdoor plants/photo-1780867657408-2a011a64a3fa.avif" },
-    { image: "/outdoor plants/Plants-for-Home-Garden-08-576x1024.jpg" },
-    { image: "/outdoor plants/outdoor plant.jpg"},
-    { image: "/outdoor plants/WhatsAppImage2026-06-02at15.52.20_2.jpg"},
-  ], */
 
   Temple: [
     { name: "Jammi", image: "/temple/temple plnt 1 (Jammi).jpeg" },

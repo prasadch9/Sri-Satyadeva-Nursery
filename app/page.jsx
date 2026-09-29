@@ -42,9 +42,9 @@ export default function Home() {
           </div>
 
           <div className="floaty relative mx-auto w-full max-w-md">
-            <div className="blob overflow-hidden border-8 border-white/80 bg-emerald-700 p-4 shadow-2xl">
-              <div className="blob-alt overflow-hidden bg-white">
-                <img src="/home/9358a308-dc07-4e76-b371-f2a4e7ff26c3.jpg" alt="Tropical nursery plants" className="aspect-square w-full object-cover" />
+            <div>
+              <div>
+                <img src="/home/9358a308-dc07-4e76-b371-f2a4e7ff26c3.jpg" alt="Tropical nursery plants" className="aspect-square w-full object-contain" />
               </div>
             </div>
           </div>

@@ -5,11 +5,11 @@ export default function About() {
     <div className="page-gradient min-h-screen">
       <section className="hero-gradient px-6 py-20 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <p className="font-black uppercase tracking-[.25em] text-emerald-900">
+          <p className="text-3xl text-emerald-950 sm:text-4xl font-black ">
             About Us
           </p>
 
-          <h1 className="mt-3 text-5xl font-black text-emerald-950 sm:text-6xl">
+          <h1 className="mt-3 font-black text-sm text-orange-600">
             Rooted in nature, grown with care.
           </h1>
 
