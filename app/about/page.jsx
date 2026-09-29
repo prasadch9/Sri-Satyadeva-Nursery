@@ -9,7 +9,7 @@ export default function About() {
             About Us
           </p>
 
-          <h1 className="mt-3 font-black text-sm text-orange-600">
+          <h1 className="mt-3 font-black text-lg text-orange-600">
             Rooted in nature, grown with care.
           </h1>
 
