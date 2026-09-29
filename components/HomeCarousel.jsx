@@ -25,15 +25,27 @@ export default function HomeCarousel() {
   return (
     <div className="relative mx-auto max-w-6xl">
       <div className="overflow-hidden rounded-[2.5rem] border-8 border-white bg-emerald-900 shadow-2xl">
-        <div className="relative aspect-[4/3] min-h-[340px] sm:aspect-[16/8]">
+        <div className="relative w-full overflow-hidden">
           {slides.map((slide, i) => (
             <div
               key={slide.src}
               className={`absolute inset-0 transition-all duration-500 ${
-                i === index ? "translate-x-0 opacity-100" : i < index ? "-translate-x-full opacity-0" : "translate-x-full opacity-0"
+                i === index
+                  ? "relative translate-x-0 opacity-100"
+                  : i < index
+                    ? "-translate-x-full opacity-0"
+                    : "translate-x-full opacity-0"
               }`}
             >
-              <Image src={slide.src} alt={slide.title} fill className="object-cover" priority={i === 0} />
+              <Image
+                src={slide.src}
+                alt={slide.title}
+                width={1920}
+                height={1080}
+                className="h-auto w-full object-contain"
+                priority={i === 0}
+              />
+
               <div className="absolute bottom-8 left-7 max-w-lg text-white sm:bottom-12 sm:left-12">
                 <p className="mt-3 text-lg text-white/90">{slide.text}</p>
               </div>
@@ -64,7 +76,9 @@ export default function HomeCarousel() {
             key={slide.src}
             onClick={() => setIndex(i)}
             aria-label={`Go to slide ${i + 1}`}
-            className={`h-3 rounded-full transition-all ${i === index ? "w-9 bg-orange-500" : "w-3 bg-emerald-300"}`}
+            className={`h-3 rounded-full transition-all ${
+              i === index ? "w-9 bg-orange-500" : "w-3 bg-emerald-300"
+            }`}
           />
         ))}
       </div>
